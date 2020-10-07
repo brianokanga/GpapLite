@@ -1,6 +1,6 @@
 {
   "ConnectionStrings": {
-    "GpapConnection": "Server=DESKTOP-TTU7UFO\\SQLEXPRESS;Database=GpapDb;Trusted_Connection=True;"
+    "GpapLiteConnection": "Server=DESKTOP-TTU7UFO\\SQLEXPRESS;Database=GpapLiteDb;Trusted_Connection=True;"
   },
   "Logging": {
     "LogLevel": {
