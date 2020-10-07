@@ -26,8 +26,11 @@ namespace GpapLite
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
-                Configuration.GetConnectionString("GpapLiteConnection")));
+            services.AddDbContext<GpapDbContext>(opt =>
+            {
+                var connectionString = Configuration.GetConnectionString("GpapLiteConnection");
+                opt.UseSqlServer(connectionString);
+            });
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();

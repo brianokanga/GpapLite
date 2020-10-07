@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using GpapLite.Data.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace GpapLite.Data.Data
@@ -11,5 +9,7 @@ namespace GpapLite.Data.Data
             : base(options)
         {
         }
+
+        public DbSet<County> Counties { get; set; }
     }
 }
