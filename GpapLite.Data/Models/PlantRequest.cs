@@ -10,5 +10,7 @@ namespace GpapLite.Data.Models
 
         public int CountyId { get; set; }
         public virtual County County { get; set; }
+
+        
     }
 }
