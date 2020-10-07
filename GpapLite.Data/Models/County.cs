@@ -14,6 +14,6 @@ namespace GpapLite.Data.Models
         [MaxLength(50)]
         public string Name { get; set; }
 
-        public IList<SubCounty> SubCounties { get; set; }
+        public List<SubCounty> SubCounties { get; set; }
     }
 }

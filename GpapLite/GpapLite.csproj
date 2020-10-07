@@ -24,4 +24,8 @@
     <Folder Include="User\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GpapLite.Data\GpapLite.Data.csproj" />
+  </ItemGroup>
+
 </Project>
