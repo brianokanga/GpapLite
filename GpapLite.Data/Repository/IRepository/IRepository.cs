@@ -4,7 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace GpapLite.Data.Repositories.IRepository
+namespace GpapLite.Data.Repository.IRepository
 {
     public interface IRepository<T> where T : class
     {

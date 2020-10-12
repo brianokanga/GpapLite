@@ -4,10 +4,10 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using GpapLite.Data.Data;
-using GpapLite.Data.Repositories.IRepository;
+using GpapLite.Data.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
 
-namespace GpapLite.Data.Repositories
+namespace GpapLite.Data.Repository
 {
     public class Repository<T> : IRepository<T> where T : class
     {

@@ -16,8 +16,4 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Contracts" Version="3.1.4" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repository\IRepository\" />
-  </ItemGroup>
-
 </Project>
