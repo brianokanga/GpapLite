@@ -7,11 +7,13 @@ namespace GpapLite.Data.Models
 {
     public class County
     {
-      
-        public string CountryId { get; set; }
 
-        public string Name { get; set; }
-
-        public ICollection<SubCounty> SubCounties { get; set; }
+            public County()
+            {
+                SubCounties = new List<SubCounty>();
+            }
+            public int Id { get; set; }
+            public string Name { get; set; }
+            public virtual ICollection<SubCounty> SubCounties { get; set; }
     }
 }
