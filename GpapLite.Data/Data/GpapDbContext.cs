@@ -10,9 +10,6 @@ namespace GpapLite.Data.Data
         {
         }
 
-
-
-     
         public DbSet<County> Counties { get; set; }
         public DbSet<SubCounty> SubCounties { get; set; }
     }
